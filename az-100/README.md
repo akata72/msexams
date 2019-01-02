@@ -61,6 +61,8 @@
 
 ## Deploy and Manage VMs (20-25%)
 
+az vm list | show | create | resize | get-instance-view | open-port 
+
 ### Create and Configure VMs (Windows and Linux)
 - Configure high availability; 
 - Configure monitoring, networking, storage, and virtual machine size; 
@@ -77,7 +79,16 @@
 ### Manage VMs
 - Add data discs; 
 - Add network interfaces; 
-- Automate configuration management by using PowerShell DSC and VM Agent by using custom script extensions;
+
+#### Automate configuration management by using PowerShell DSC and VM Agent by using custom script extensions;
+az vm extension set \
+  --resource-group 11ac52c6-3a4d-4a96-b900-5b37096224dc \
+  --vm-name myVM \
+  --name customScript \
+  --publisher Microsoft.Azure.Extensions \
+  --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh"]}' \
+  --protected-settings '{"commandToExecute": "./configure-nginx.sh"}'
+
 - Manage VM sizes; 
 - Move VMs from one resource group to another; 
 - Redeploy VMs
