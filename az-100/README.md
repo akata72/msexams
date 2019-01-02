@@ -1,6 +1,8 @@
 # AZ-100 Core Concepts
 
-## Azure Subscriptions
+## Azure Subscriptions and Resources (15-20%)
+
+### Azure Subscriptions
 - Assign administrator permissions; 
 - configure cost center quotas and tagging; 
 - configure Azure subscription policies at Azure subscription level
@@ -18,7 +20,7 @@
 - Utilize Log Search query functions; 
 - View alerts in Log Analytics
 
-## Manage Resource Groups 
+### Manage Resource Groups 
 - Use Azure policies for resource groups; 
 - Configure resource locks; 
 - Configure resource policies; 
@@ -26,7 +28,7 @@
 - Move resources across resource groups; 
 - Remove resource groups
 
-## Azure Storage
+## Implement and Manage Storage (20-25%)
 
 ### Create and Configure Storage Accounts
 - Configure network access to the storage account; 
@@ -57,7 +59,9 @@
 - Create and configure backup policy; 
 - Perform a restore operation
 
-## Deploy and Manage VMs
+## Deploy and Manage VMs (20-25%)
+
+### Create and Configure VMs (Windows and Linux)
 - Configure high availability; 
 - Configure monitoring, networking, storage, and virtual machine size; 
 - Deploy and configure scale sets
@@ -84,6 +88,8 @@
 - Implement backup policies; 
 - Perform VM restore
 
+## Configure and Manage VNETs (20-25%)
+
 ### Create connectivity between virtual networks
 - Create and configure VNET peering;
 - Create and configure VNET to VNET; 
@@ -103,6 +109,8 @@
 - Associate NSG to a subnet or network interface; 
 - Identify required ports; 
 - Evaluate effective security rules
+
+## Manage Identities (15-20%)
 
 ### Manage Azure Active Directory (AD)
 - Add custom domains; 
